@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Registration </title>
+    </head>
+    <body bgcolor="lavender">
+        <form name="Registration" method="post" onsubmit="return validateForm()" action="loginform.html">
+            <center><big> Registration Form </big>
+                <table align="center">
+                    <tr>
+                        <td> Student No : </td>
+                        <td><input type="number" name="sno" required></td>
+                    </tr>
+
+                    <tr>
+                        <td> Student Name : </td>
+                        <td><input type="text" name="sname" required></td>
+                    </tr>
+
+                    <tr>
+                        <td> Student Gender : </td>
+                        <td><input type="radio" name="gender" required>Male
+                            <input type="radio" name="gender" required>Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Password : </td>
+                        <td><input type="password" name="Password" pattern="[0-9,a-z,@]{8}" required></td>
+                    </tr>
+
+                    <tr>
+                        <td> Confirm Password : </td>
+                        <td><input type="password" name="CPassword" required></td>
+                    </tr>
+
+                    <tr>
+                        <td> Email : </td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td> Contact Number : </td>
+                        <td><input type="number" name="contact" pattern="[0-9]{10}" required></td>
+                    </tr>
+
+                    <tr>
+                        <td> Cource : </td>
+                        <td><select name="Cource">
+                                <option>BCA</option>
+                                <option>BBA</option>
+                                <option>B.COM</option>
+                                <option>B.ED</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Student Hobbies : </td>
+                        <td><input type="checkbox" name="swimming">Swimming
+                            <input type="checkbox" name="traveling">Traveling
+                            <input type="checkbox" name="writing">Writing
+                            <input type="checkbox" name="dancing">Dancing
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                        <td> Address : </td>
+                        <td><textarea name="address" required></textarea>
+                    </tr>
+
+                    <center>
+                        <tr>
+                            <td><input type="Submit" value="Submit" name="Submit">
+                                <input type="Reset" value="Reset" name="Reset">
+                            </td>
+                        </tr>
+                    </center>
+                </table>
+        </form>
+    </body>
+</html>  
